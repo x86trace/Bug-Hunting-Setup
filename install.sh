@@ -37,6 +37,12 @@ echo "${G}[+] Making a directory to Store your weapons${NC}"
 mkdir ~/Weapons
 cd ~/Weapons/
 
+#Installing pdtm
+echo "${G}[+] Installing Pdtm${NC}"
+go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+sudo mv ~/go/bin/* /usr/local/bin
+pdtm -ia
+
 #Installing Sublister 
 echo "${G}[+] Installing Sublist3r${NC}"
 sudo git clone https://github.com/aboul3la/Sublist3r.git
@@ -68,9 +74,9 @@ go install github.com/ffuf/ffuf@latest
 echo "${G}[+] A bullet called ffuf is loaded${NC}"
 
 #nuclei
-echo "${G}[+] Installing nuclei${NC}"
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-echo "${G}[+] A bullet called nuclei is loaded${NC}"
+#echo "${G}[+] Installing nuclei${NC}"
+#go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+#echo "${G}[+] A bullet called nuclei is loaded${NC}"
 
 #amass
 echo "${G}[+] Installing amass${NC}"
@@ -103,9 +109,9 @@ go install github.com/tomnomnom/httprobe @latest
 echo "${G}[+] A bullet called httprobe is loaded${NC}"
 
 #httpx
-echo "${G}[+] Installing httpx${NC}"
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-echo "${G}[+] A bullet called httpx is loaded${NC}"
+#echo "${G}[+] Installing httpx${NC}"
+#go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+#echo "${G}[+] A bullet called httpx is loaded${NC}"
 
 #gobuster
 echo "${G}[+] Installing gobuster${NC}"
