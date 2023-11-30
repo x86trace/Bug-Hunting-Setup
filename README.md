@@ -11,7 +11,7 @@ Welcome to the All-in-One Bug Hunting Setup! This bash script streamlines the pr
 Setting up and using this script is a breeze. Follow these straightforward steps:
 
 ```bash
-1. sudo git clone https://github.com/x86trace/All-in-One-Bug-Hunting-Setup.git
+1. sudo git clone https://github.com/x86trace/Bug-Hunting-Setup.git
 2. cd All-in-One-Bug-Hunting-Setup/
 3. chmod +x install.sh
 4. bash install.sh or ./install.sh
